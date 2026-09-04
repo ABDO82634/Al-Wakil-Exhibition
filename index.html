@@ -8,10 +8,12 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;800;900&display=swap" rel="stylesheet">
-    <!-- أيقونة الموقع (Favicon) لتغيير علامة كوكب الأرض -->
-    <link rel="icon" type="image/svg+xml"
+    <!-- أيقونة الموقع (Favicon) -->
+    <link rel="icon" type="image/svg+xml">
         href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23080b10'/><path d='M20 55 L35 40 L65 40 L80 55 L85 65 L15 65 Z' fill='%23ff2a4b'/><circle cx='30' cy='65' r='8' fill='%23ffffff'/><circle cx='70' cy='65' r='8' fill='%23ffffff'/><text x='50' y='30' font-family='Arial' font-weight='bold' font-size='18' fill='%23ffb703' text-anchor='middle'>W</text></svg>">
-</head>
+
+    <!-- إثبات ملكية الموقع لمحرك بحث جوجل -->
+    <meta name="google-site-verification" content="3l56kKKfQqXoOtj0AOlHEwyrLMjx2DPno6WNGNrIVpc" />
 
 <body>
 
@@ -88,6 +90,19 @@
             <p class="bless">صلِّ على الحبيب المصطفى سيدنا محمد ﷺ</p>
         </div>
     </footer>
+
+    <!-- نافذة معرض الصور المنبثقة (Modal) -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <div class="main-image-container">
+                <img id="modalMainImg" src="" alt="صورة العربية">
+                <button class="prev-btn" id="prevBtn"><i class="fa-solid fa-chevron-right"></i></button>
+                <button class="next-btn" id="nextBtn"><i class="fa-solid fa-chevron-left"></i></button>
+            </div>
+            <div class="thumbnails-container" id="modalThumbnails"></div>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
